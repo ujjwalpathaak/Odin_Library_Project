@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <nav class="navbar navbar-dark bg-dark">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">Library App</a>
+          
+          <div>
+            <button class="btn btn-light" onclick="showForm()">Add Book</button>
+          </div>
+        </div>
+      </nav>
+      <main>
+          <div class = "hide"  id="form-wrapper">
+              <form id="addBookForm">
+                <div class="mb-3">
+                  <label for="exampleInputEmail1" class="form-label">Book Title: </label>
+                  <input id = "title" type="text" class="form-control">
+                </div>
+                <div class="mb-3">
+                  <label for="exampleInputEmail1" class="form-label">Author Name: </label>
+                  <input id = "author" type="text" class="form-control">
+                </div>
+                <div class="mb-3">
+                  <label for="exampleInputEmail1" class="form-label">Pages: </label>
+                  <input id = "pages" type="number" class="form-control">
+                </div>
+                <button id="submit" class="btn btn-light">Add</button>
+                <button type="button" onclick="hideForm()" class="btn btn-light">Close</button>
+              </form>
+          </div>
+          <div id="content-wrapper">
+            
+      </main>
+      <footer id="sticky-footer" class="flex-shrink-0 py-4 bg-dark text-white-50">
+        <div class="container text-center">
+          <small>Copyright &copy; Ujjwal Pathak</small>
+        </div>
+      </footer>
+
+    <script src="/main.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
+</body>
+</html>
