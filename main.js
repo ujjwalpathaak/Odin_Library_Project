@@ -59,9 +59,3 @@ printlib = () => {
         </div>`
     }
 }
-
-readStatus = () => {
-    /* let readbtn = document.getElementById('readStatus') */
-    this.classList.remove("read")
-    this.classList.add("notread")
-}
