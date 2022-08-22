@@ -32,6 +32,14 @@ main{
 .hide{
     display: none;
 }
+.read{
+    background-color: green;
+    color: white;
+}
+.notread{
+    background-color: red;
+    color: white;
+}
 #card{
     width: 90px;
     margin: 10px;

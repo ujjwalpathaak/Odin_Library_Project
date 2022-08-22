@@ -52,10 +52,16 @@ printlib = () => {
     for (let i = 0; i < myLibrary.length; i++) {
         library.innerHTML += `<div id = "card" class="card" style="width: 17rem;">
         <div class="card-body">
-        <h5 class="card-title">${myLibrary[i].title}</h5>
-        <h6 class="card-subtitle mb-2 text-muted">${myLibrary[i].author}</h6>
-        <button>Read</button>
+        <h4 class="card-title">${myLibrary[i].title}</h5>
+        <h5 class="card-subtitle mb-2 text-muted">Pages: ${myLibrary[i].author}</h6>
+        <h6 class="card-subtitle mb-2 text-muted">Pages: ${myLibrary[i].pages}</h6>
         </div>
         </div>`
     }
+}
+
+readStatus = () => {
+    /* let readbtn = document.getElementById('readStatus') */
+    this.classList.remove("read")
+    this.classList.add("notread")
 }
